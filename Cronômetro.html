@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cronômetro</title>
+    <script>
+        var count = 200000;
+        console.log(t);
+        function timer() {
+            var t = document.getElementById('tempo');
+
+            if (count > -1) {
+                t.innerText = count;
+                count--;
+                setTimeout('timer()',10);
+            }
+        }
+
+    </script>
+</head>
+<body onload="timer()">
+    <div id="tempo"></div>
+</body>
+</html>
